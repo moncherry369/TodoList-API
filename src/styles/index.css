@@ -1,12 +1,29 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+.task-list {
+    width: 300px;
+   
+}
 
-/* 
-
-    You can write your own styles here...
+.todo-container {
+    width: 300px;
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: salmon;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
