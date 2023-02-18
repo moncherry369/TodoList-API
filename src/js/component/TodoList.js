@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+
 const TodoList = () => {
     const [todos, setTodos] = useState([]);
 
@@ -59,7 +60,7 @@ fetch("https://assets.breatheco.de/apis/fake/todos/user/moncherry369", {
 }
 
 const handleDeleteAll = () => {
-    fetch("http://assets.breatheco.de/apis/fake/todos/user/moncherry369", {
+    fetch("https://assets.breatheco.de/apis/fake/todos/user/moncherry369", {
         method:"DELETE",
         headers:{
             "Content-Type" : "application/json"
@@ -74,7 +75,7 @@ const handleDeleteAll = () => {
 
     return (
        <div className="todo-container">
-        <h1>Todos</h1>
+        <h1>todos</h1>
         <div className="todoAdd">
             <form className="todo-form" onSubmit={addTask}>
                 <input type="text" name="todo" placeholder={todos[0]?"Add another todo.":"No todos, add todos"}></input>
@@ -85,12 +86,12 @@ const handleDeleteAll = () => {
             return (
                 <li key={i} className="task-item">
                     <p>{todo.label}</p>
-                    <button onClick={() => deleteTask(i)}>X</button>
+                    <button className="list-delete" onClick={() => deleteTask(i)}>X</button>
                 </li>
             )
         })}
         </ul>
-        <button onClick={() => handleDeleteAll()}>Delete All</button>
+        <button className="deleteAll" onClick={() => handleDeleteAll()}>Delete All</button>
        </div>
     )
 }

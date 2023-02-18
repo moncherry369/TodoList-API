@@ -1,29 +1,67 @@
 .task-item {
     display: flex;
     justify-content: space-between;
-    width: 250px;
+    border-bottom: 1px rgba(223, 210, 212, 0.922) solid;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    width: 190px;
+}
+
+.tasl-item p {
+    display: flex;
+    justify-self: start;
 }
 .task-list {
-    width: 300px;
-   
+    width: 350px;
+    padding: 5px;
 }
 
 .todo-container {
-    width: 300px;
+    width: 350px;
     background-color: lightpink;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-button {
+
+h1 {
+  padding-top:10px;
+  color: salmon;
+  font-family: 'Courier New', Courier, monospace;
+  opacity: 50%;
+}
+
+.deleteAll {
     background-color: salmon;
+    border-radius: 5px;
+    border: 3px black solid;
+    height: 30px;
+    margin-bottom:10px;
+}
+
+.list-delete {
+    display: focus;
+    color: lightpink;
+    background-color: lightpink;
+    border: none;
+}
+
+.list-delete:hover {
+    background-color: salmon;
+    color: black;
+    border-radius: 5px;
+    height: 30px; 
+    border: 2px solid black;
+    border-radius: 100%;
     
 }
+
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
+  
 }
